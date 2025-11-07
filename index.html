@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="A romantic interactive web experience">
+    <title>I Miss You - A Romantic Surprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Stage 1: VS Code Editor -->
+    <div id="stage1" class="stage active">
+        <div class="vscode-container">
+            <div class="vscode-header">
+                <div class="vscode-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="vscode-title">i-miss-you.html</div>
+            </div>
+            <div class="vscode-content">
+                <div class="line-numbers">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                </div>
+                <div class="code-content">
+                    <div class="code-line"><span class="html-tag">&lt;!DOCTYPE html&gt;</span></div>
+                    <div class="code-line"><span class="html-tag">&lt;html</span> <span class="html-attr">lang</span>=<span class="html-string">"en"</span><span class="html-tag">&gt;</span></div>
+                    <div class="code-line">  <span class="html-tag">&lt;head&gt;</span></div>
+                    <div class="code-line">    <span class="html-tag">&lt;title&gt;</span><span class="typing-text" id="typing-title">To the Most Amazing Person in My Life</span><span class="html-tag">&lt;/title&gt;</span></div>
+                    <div class="code-line">    <span class="html-tag">&lt;style&gt;</span></div>
+                    <div class="code-line">      <span class="css-selector">body</span> {</div>
+                    <div class="code-line">        <span class="css-property">background</span>: <span class="css-value">linear-gradient(45deg, #ff6b9d, #c44569)</span>;</div>
+                    <div class="code-line">        <span class="css-property">font-family</span>: <span class="css-value">'Dancing Script', cursive</span>;</div>
+                    <div class="code-line">        <span class="css-property">display</span>: <span class="css-value">flex</span>;</div>
+                    <div class="code-line">        <span class="css-property">justify-content</span>: <span class="css-value">center</span>;</div>
+                    <div class="code-line">        <span class="css-property">align-items</span>: <span class="css-value">center</span>;</div>
+                    <div class="code-line">        <span class="css-property">height</span>: <span class="css-value">100vh</span>;</div>
+                    <div class="code-line">        <span class="css-property">margin</span>: <span class="css-value">0</span>;</div>
+                    <div class="code-line">      }</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage 2: Run Sequence -->
+    <div id="stage2" class="stage">
+        <div class="run-sequence">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-title">Terminal</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-line">$ npm run dev</div>
+                    <div class="terminal-line">> i-miss-you@1.0.0 dev</div>
+                    <div class="terminal-line">> vite</div>
+                    <div class="terminal-line"></div>
+                    <div class="terminal-line success">✓ Vite server running at: http://localhost:3000</div>
+                    <div class="terminal-line success">✓ Ready in 2.1s</div>
+                </div>
+            </div>
+            <div class="browser-preview">
+                <div class="browser-header">
+                    <div class="browser-controls">
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                        <span class="browser-dot"></span>
+                    </div>
+                    <div class="browser-address">http://localhost:3000</div>
+                </div>
+                <div class="browser-content">
+                    <div class="preview-text">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stage 3: Final Website -->
+    <div id="stage3" class="stage">
+        <div class="final-website">
+            <canvas id="particle-canvas"></canvas>
+            <div class="content-overlay">
+                <div class="main-message">
+                    <h1 class="title" id="main-title">To the Most Amazing Person in My Life</h1>
+                    <p class="subtitle" id="subtitle">You are loved. Deeply. Genuinely. Endlessly.</p>
+                    <div class="heart-container">
+                        <div class="heart" id="main-heart">❤️</div>
+                    </div>
+                    <p class="message-text" id="message-text">
+                        To the Most Amazing Person in My Life,<br><br>
+                        There are moments when I still can't believe that someone like you came into my life. You've brought light into places I didn't even realize were dark. Every day with you feels like a gift, something I never take for granted. You have this rare kind of warmth that makes everything feel calm, safe, and beautiful all at once.<br><br>
+                        I'm lucky, no, blessed to have you. You've shown me what genuine care feels like, what it means to love someone deeply, and to be loved in return. You make even the simplest days special, whether it's your laugh, your messages, or just knowing you're there. Somehow, you turn ordinary moments into memories I want to keep forever.<br><br>
+                        There's so much about you that amazes me: your kindness, your strength, your patience, and the way you make people around you feel seen and valued. You inspire me to be better, to work harder, to love deeper. You've become my reason to smile, my calm after a long day, and my favorite thought every morning and night.<br><br>
+                        This website is something small compared to everything you deserve, but I made it to remind you how special you are to me. It's my way of saying thank you for staying, for caring, for being you. You've changed my life in more ways than I can explain, and I'll keep being grateful for you always.<br><br>
+                        No matter what happens, please know this:<br>
+                        You are loved. Deeply. Genuinely. Endlessly.<br><br>
+                        With all my heart,<br>
+                        Your Love Lance
+                    </p>
+                </div>
+                
+                <!-- Interactive Controls -->
+                <div class="controls" role="toolbar" aria-label="Media controls">
+                    <button id="play-pause" class="control-btn" aria-label="Play/Pause animation" title="Play/Pause">⏸️</button>
+                    <button id="speed-control" class="control-btn" aria-label="Change animation speed" title="Speed">⚡</button>
+                    <button id="effect-cycle" class="control-btn" aria-label="Cycle animation effect" title="Next Effect">✨</button>
+                    <button id="music-toggle" class="control-btn" aria-label="Toggle background music" title="Music">🎵</button>
+                </div>
+                
+                <!-- Animation Controls -->
+                <div class="animation-controls" role="group" aria-label="Animation effects">
+                    <button class="anim-btn" data-effect="fade" aria-label="Fade effect">Fade</button>
+                    <button class="anim-btn" data-effect="typewriter" aria-label="Typewriter effect">Typewriter</button>
+                    <button class="anim-btn" data-effect="morph" aria-label="Morph effect">Morph</button>
+                    <button class="anim-btn" data-effect="scale" aria-label="Scale effect">Scale</button>
+                    <button class="anim-btn" data-effect="rotate" aria-label="Rotate effect">Rotate</button>
+                    <button class="anim-btn" data-effect="combined" aria-label="Combined effect">Combined</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="stage-indicators">
+            <span class="stage-indicator active" data-stage="1">1</span>
+            <span class="stage-indicator" data-stage="2">2</span>
+            <span class="stage-indicator" data-stage="3">3</span>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="background-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
